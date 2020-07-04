@@ -21,15 +21,22 @@ namespace AutosalonProject
         {
             Registration reg = new Registration();
             reg.Name = textBoxName.Text;
-            reg.Login = textBoxName.Text;
+            reg.Login = textBoxLogin.Text;
             reg.Password = textBoxPassword.Text;
             Autorization aut = new Autorization();
-            aut.Login = textBoxName.Text;
+            aut.Name = textBoxName.Text;
+            aut.Login = textBoxLogin.Text;
             aut.Password = textBoxPassword.Text;
+            aut.Type = comboBoxType.Text;
             Program.AuDb.Registration.Add(reg);
             Program.AuDb.Autorization.Add(aut);
             Program.AuDb.SaveChanges();
             this.Close();
+        }
+
+        private void FormRegistration_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

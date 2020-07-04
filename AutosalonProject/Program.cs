@@ -8,7 +8,7 @@ namespace AutosalonProject
 {
     static class Program
     {
-        public static AutosalonEntities3 AuDb = new AutosalonEntities3();
+        public static AutosalonEntities9 AuDb = new AutosalonEntities9();
         /// <summary>
         /// Главная точка входа для приложения.
         /// </summary>

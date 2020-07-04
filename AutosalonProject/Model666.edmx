@@ -54,6 +54,7 @@
           <Property Name="Name" Type="nvarchar(max)" />
           <Property Name="Login" Type="nvarchar(max)" />
           <Property Name="Password" Type="nvarchar(max)" />
+          <Property Name="Type" Type="nvarchar(max)" />
         </EntityType>
         <EntityContainer Name="Хранилище AutosalonModelContainer">
           <EntitySet Name="Auto" EntityType="Self.Auto" Schema="dbo" store:Type="Tables" />
@@ -116,8 +117,9 @@
           <Property Name="Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
           <Property Name="Login" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
           <Property Name="Password" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Type" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
         </EntityType>
-        <EntityContainer Name="AutosalonEntities3" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="AutosalonEntities9" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="Auto" EntityType="Self.Auto" />
           <EntitySet Name="Autorization" EntityType="Self.Autorization" />
           <EntitySet Name="Buyer" EntityType="Self.Buyer" />
@@ -129,7 +131,7 @@
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="Хранилище AutosalonModelContainer" CdmEntityContainer="AutosalonEntities3">
+        <EntityContainerMapping StorageEntityContainer="Хранилище AutosalonModelContainer" CdmEntityContainer="AutosalonEntities9">
           <EntitySetMapping Name="Auto">
             <EntityTypeMapping TypeName="AutosalonModel.Auto">
               <MappingFragment StoreEntitySet="Auto">
@@ -182,6 +184,7 @@
                 <ScalarProperty Name="Name" ColumnName="Name" />
                 <ScalarProperty Name="Login" ColumnName="Login" />
                 <ScalarProperty Name="Password" ColumnName="Password" />
+                <ScalarProperty Name="Type" ColumnName="Type" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormAuto));
             this.Model = new System.Windows.Forms.Label();
             this.Color = new System.Windows.Forms.Label();
             this.Price = new System.Windows.Forms.Label();
@@ -38,68 +39,79 @@
             this.textBoxGosNumber = new System.Windows.Forms.TextBox();
             this.textBoxYearRelease = new System.Windows.Forms.TextBox();
             this.listViewCar = new System.Windows.Forms.ListView();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.ID = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.Model1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.Color1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.Price1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.GosNumber1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.YearRelease1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.comboBoxColor = new System.Windows.Forms.ComboBox();
+            this.buttonAdd = new System.Windows.Forms.Button();
+            this.buttonEdit = new System.Windows.Forms.Button();
+            this.buttonDel = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // Model
             // 
             this.Model.AutoSize = true;
-            this.Model.Location = new System.Drawing.Point(21, 89);
+            this.Model.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.Model.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Model.Location = new System.Drawing.Point(20, 110);
             this.Model.Name = "Model";
-            this.Model.Size = new System.Drawing.Size(72, 13);
+            this.Model.Size = new System.Drawing.Size(97, 19);
             this.Model.TabIndex = 0;
             this.Model.Text = "Модель авто";
             // 
             // Color
             // 
             this.Color.AutoSize = true;
-            this.Color.Location = new System.Drawing.Point(21, 168);
+            this.Color.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.Color.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Color.Location = new System.Drawing.Point(20, 189);
             this.Color.Name = "Color";
-            this.Color.Size = new System.Drawing.Size(58, 13);
+            this.Color.Size = new System.Drawing.Size(75, 19);
             this.Color.TabIndex = 1;
             this.Color.Text = "Цвет авто";
             // 
             // Price
             // 
             this.Price.AutoSize = true;
-            this.Price.Location = new System.Drawing.Point(21, 244);
+            this.Price.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.Price.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Price.Location = new System.Drawing.Point(20, 256);
             this.Price.Name = "Price";
-            this.Price.Size = new System.Drawing.Size(33, 13);
+            this.Price.Size = new System.Drawing.Size(44, 19);
             this.Price.TabIndex = 2;
             this.Price.Text = "Цена";
             // 
             // GosNumber
             // 
             this.GosNumber.AutoSize = true;
-            this.GosNumber.Location = new System.Drawing.Point(21, 323);
+            this.GosNumber.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.GosNumber.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.GosNumber.Location = new System.Drawing.Point(20, 339);
             this.GosNumber.Name = "GosNumber";
-            this.GosNumber.Size = new System.Drawing.Size(65, 13);
+            this.GosNumber.Size = new System.Drawing.Size(82, 19);
             this.GosNumber.TabIndex = 3;
             this.GosNumber.Text = "Гос. Номер";
             // 
             // YearRelease
             // 
             this.YearRelease.AutoSize = true;
-            this.YearRelease.Location = new System.Drawing.Point(21, 400);
+            this.YearRelease.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.YearRelease.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.YearRelease.Location = new System.Drawing.Point(20, 417);
             this.YearRelease.Name = "YearRelease";
-            this.YearRelease.Size = new System.Drawing.Size(71, 13);
+            this.YearRelease.Size = new System.Drawing.Size(91, 19);
             this.YearRelease.TabIndex = 4;
             this.YearRelease.Text = "Год выпуска";
             // 
             // textBoxModel
             // 
-            this.textBoxModel.Location = new System.Drawing.Point(24, 110);
+            this.textBoxModel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBoxModel.Location = new System.Drawing.Point(23, 131);
             this.textBoxModel.Multiline = true;
             this.textBoxModel.Name = "textBoxModel";
             this.textBoxModel.Size = new System.Drawing.Size(200, 36);
@@ -107,7 +119,8 @@
             // 
             // textBoxPrice
             // 
-            this.textBoxPrice.Location = new System.Drawing.Point(24, 260);
+            this.textBoxPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBoxPrice.Location = new System.Drawing.Point(23, 278);
             this.textBoxPrice.Multiline = true;
             this.textBoxPrice.Name = "textBoxPrice";
             this.textBoxPrice.Size = new System.Drawing.Size(200, 36);
@@ -115,7 +128,8 @@
             // 
             // textBoxGosNumber
             // 
-            this.textBoxGosNumber.Location = new System.Drawing.Point(24, 339);
+            this.textBoxGosNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBoxGosNumber.Location = new System.Drawing.Point(23, 361);
             this.textBoxGosNumber.Multiline = true;
             this.textBoxGosNumber.Name = "textBoxGosNumber";
             this.textBoxGosNumber.Size = new System.Drawing.Size(200, 36);
@@ -123,7 +137,8 @@
             // 
             // textBoxYearRelease
             // 
-            this.textBoxYearRelease.Location = new System.Drawing.Point(24, 418);
+            this.textBoxYearRelease.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBoxYearRelease.Location = new System.Drawing.Point(23, 439);
             this.textBoxYearRelease.Multiline = true;
             this.textBoxYearRelease.Name = "textBoxYearRelease";
             this.textBoxYearRelease.Size = new System.Drawing.Size(200, 36);
@@ -138,26 +153,18 @@
             this.Price1,
             this.GosNumber1,
             this.YearRelease1});
+            this.listViewCar.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.listViewCar.FullRowSelect = true;
             this.listViewCar.GridLines = true;
             this.listViewCar.HideSelection = false;
-            this.listViewCar.Location = new System.Drawing.Point(255, 110);
+            this.listViewCar.Location = new System.Drawing.Point(254, 131);
             this.listViewCar.MultiSelect = false;
             this.listViewCar.Name = "listViewCar";
-            this.listViewCar.Size = new System.Drawing.Size(599, 344);
+            this.listViewCar.Size = new System.Drawing.Size(675, 344);
             this.listViewCar.TabIndex = 10;
             this.listViewCar.UseCompatibleStateImageBehavior = false;
             this.listViewCar.View = System.Windows.Forms.View.Details;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::AutosalonProject.Properties.Resources.wire_png_car_6;
-            this.pictureBox1.Location = new System.Drawing.Point(24, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(100, 50);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 11;
-            this.pictureBox1.TabStop = false;
+            this.listViewCar.SelectedIndexChanged += new System.EventHandler(this.ListViewCar_SelectedIndexChanged);
             // 
             // ID
             // 
@@ -167,79 +174,109 @@
             // Model1
             // 
             this.Model1.Text = "Модель авто";
-            this.Model1.Width = 91;
+            this.Model1.Width = 119;
             // 
             // Color1
             // 
             this.Color1.Text = "Цвет авто";
-            this.Color1.Width = 92;
+            this.Color1.Width = 119;
             // 
             // Price1
             // 
             this.Price1.Text = "Цена";
-            this.Price1.Width = 88;
+            this.Price1.Width = 104;
             // 
             // GosNumber1
             // 
             this.GosNumber1.Text = "Гос. Номер";
-            this.GosNumber1.Width = 115;
+            this.GosNumber1.Width = 125;
             // 
             // YearRelease1
             // 
             this.YearRelease1.Text = "Год выпуска";
             this.YearRelease1.Width = 183;
             // 
-            // button1
+            // comboBoxColor
             // 
-            this.button1.Location = new System.Drawing.Point(360, 478);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(146, 58);
-            this.button1.TabIndex = 12;
-            this.button1.Text = "Добавить";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(534, 478);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(146, 58);
-            this.button2.TabIndex = 13;
-            this.button2.Text = "Изменить";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(708, 478);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(146, 58);
-            this.button3.TabIndex = 14;
-            this.button3.Text = "Удалить";
-            this.button3.UseVisualStyleBackColor = true;
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.comboBoxColor.FormattingEnabled = true;
+            this.comboBoxColor.Items.AddRange(new object[] {
             "Красный",
             "Фиолетовый",
             "Зелёный",
             "Чёрный",
             "Белый",
             "Синий"});
-            this.comboBox1.Location = new System.Drawing.Point(24, 191);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(200, 21);
-            this.comboBox1.TabIndex = 15;
+            this.comboBoxColor.Location = new System.Drawing.Point(23, 212);
+            this.comboBoxColor.Name = "comboBoxColor";
+            this.comboBoxColor.Size = new System.Drawing.Size(200, 21);
+            this.comboBoxColor.TabIndex = 15;
+            // 
+            // buttonAdd
+            // 
+            this.buttonAdd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(133)))), ((int)(((byte)(38)))));
+            this.buttonAdd.FlatAppearance.BorderSize = 0;
+            this.buttonAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonAdd.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonAdd.ForeColor = System.Drawing.Color.White;
+            this.buttonAdd.Location = new System.Drawing.Point(442, 501);
+            this.buttonAdd.Name = "buttonAdd";
+            this.buttonAdd.Size = new System.Drawing.Size(149, 63);
+            this.buttonAdd.TabIndex = 16;
+            this.buttonAdd.Text = "Добавить";
+            this.buttonAdd.UseVisualStyleBackColor = false;
+            this.buttonAdd.Click += new System.EventHandler(this.ButtonAdd_Click);
+            // 
+            // buttonEdit
+            // 
+            this.buttonEdit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(133)))), ((int)(((byte)(38)))));
+            this.buttonEdit.FlatAppearance.BorderSize = 0;
+            this.buttonEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonEdit.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonEdit.ForeColor = System.Drawing.Color.White;
+            this.buttonEdit.Location = new System.Drawing.Point(613, 501);
+            this.buttonEdit.Name = "buttonEdit";
+            this.buttonEdit.Size = new System.Drawing.Size(149, 63);
+            this.buttonEdit.TabIndex = 17;
+            this.buttonEdit.Text = "Изменить";
+            this.buttonEdit.UseVisualStyleBackColor = false;
+            this.buttonEdit.Click += new System.EventHandler(this.ButtonEdit_Click);
+            // 
+            // buttonDel
+            // 
+            this.buttonDel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(32)))), ((int)(((byte)(62)))));
+            this.buttonDel.FlatAppearance.BorderSize = 0;
+            this.buttonDel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonDel.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonDel.ForeColor = System.Drawing.Color.White;
+            this.buttonDel.Location = new System.Drawing.Point(780, 501);
+            this.buttonDel.Name = "buttonDel";
+            this.buttonDel.Size = new System.Drawing.Size(149, 63);
+            this.buttonDel.TabIndex = 18;
+            this.buttonDel.Text = "Удалить";
+            this.buttonDel.UseVisualStyleBackColor = false;
+            this.buttonDel.Click += new System.EventHandler(this.ButtonDel_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.pictureBox1.Image = global::AutosalonProject.Properties.Resources.wire_png_car_6;
+            this.pictureBox1.Location = new System.Drawing.Point(24, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(129, 74);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 11;
+            this.pictureBox1.TabStop = false;
             // 
             // FormAuto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(886, 615);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.BackgroundImage = global::AutosalonProject.Properties.Resources.pattern;
+            this.ClientSize = new System.Drawing.Size(953, 593);
+            this.Controls.Add(this.buttonDel);
+            this.Controls.Add(this.buttonEdit);
+            this.Controls.Add(this.buttonAdd);
+            this.Controls.Add(this.comboBoxColor);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.listViewCar);
             this.Controls.Add(this.textBoxYearRelease);
@@ -251,8 +288,11 @@
             this.Controls.Add(this.Price);
             this.Controls.Add(this.Color);
             this.Controls.Add(this.Model);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormAuto";
-            this.Text = "FormAuto";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Автомобили";
+            this.Load += new System.EventHandler(this.FormAuto_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -278,9 +318,9 @@
         private System.Windows.Forms.ColumnHeader Price1;
         private System.Windows.Forms.ColumnHeader GosNumber1;
         private System.Windows.Forms.ColumnHeader YearRelease1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox comboBoxColor;
+        private System.Windows.Forms.Button buttonAdd;
+        private System.Windows.Forms.Button buttonEdit;
+        private System.Windows.Forms.Button buttonDel;
     }
 }

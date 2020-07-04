@@ -13,10 +13,10 @@ namespace AutosalonProject
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class AutosalonEntities3 : DbContext
+    public partial class AutosalonEntities9 : DbContext
     {
-        public AutosalonEntities3()
-            : base("name=AutosalonEntities3")
+        public AutosalonEntities9()
+            : base("name=AutosalonEntities9")
         {
         }
     
