@@ -59,7 +59,7 @@
             this.textBoxLastName.Location = new System.Drawing.Point(12, 236);
             this.textBoxLastName.Multiline = true;
             this.textBoxLastName.Name = "textBoxLastName";
-            this.textBoxLastName.Size = new System.Drawing.Size(183, 34);
+            this.textBoxLastName.Size = new System.Drawing.Size(203, 34);
             this.textBoxLastName.TabIndex = 7;
             // 
             // labelLastName
@@ -79,7 +79,7 @@
             this.textBoxName.Location = new System.Drawing.Point(12, 162);
             this.textBoxName.Multiline = true;
             this.textBoxName.Name = "textBoxName";
-            this.textBoxName.Size = new System.Drawing.Size(183, 34);
+            this.textBoxName.Size = new System.Drawing.Size(203, 34);
             this.textBoxName.TabIndex = 5;
             // 
             // labelName
@@ -99,7 +99,7 @@
             this.textBoxMiddleName.Location = new System.Drawing.Point(12, 306);
             this.textBoxMiddleName.Multiline = true;
             this.textBoxMiddleName.Name = "textBoxMiddleName";
-            this.textBoxMiddleName.Size = new System.Drawing.Size(183, 34);
+            this.textBoxMiddleName.Size = new System.Drawing.Size(203, 34);
             this.textBoxMiddleName.TabIndex = 11;
             // 
             // labelMiddleName
@@ -119,7 +119,7 @@
             this.textBoxPhone.Location = new System.Drawing.Point(12, 379);
             this.textBoxPhone.Multiline = true;
             this.textBoxPhone.Name = "textBoxPhone";
-            this.textBoxPhone.Size = new System.Drawing.Size(183, 34);
+            this.textBoxPhone.Size = new System.Drawing.Size(203, 34);
             this.textBoxPhone.TabIndex = 9;
             this.textBoxPhone.TextChanged += new System.EventHandler(this.TextBoxPhone_TextChanged);
             this.textBoxPhone.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TextBoxPhone_KeyPress);
@@ -141,7 +141,7 @@
             this.textBoxMail.Location = new System.Drawing.Point(12, 447);
             this.textBoxMail.Multiline = true;
             this.textBoxMail.Name = "textBoxMail";
-            this.textBoxMail.Size = new System.Drawing.Size(183, 34);
+            this.textBoxMail.Size = new System.Drawing.Size(203, 34);
             this.textBoxMail.TabIndex = 13;
             // 
             // labelMail
